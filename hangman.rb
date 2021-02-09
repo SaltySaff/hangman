@@ -51,7 +51,7 @@ class Hangman
       letters_used: @letters_used,
       answer_split: @answer_split,
       display: @display,
-      rounds_counter: @rounds_counter,
+      rounds_counter: @round_counter,
       rounds: @rounds
     })
     File.open('./hangman.yml', 'w') { |f| f.write game_state }
